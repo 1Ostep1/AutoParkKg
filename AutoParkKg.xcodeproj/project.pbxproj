@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		833095192948E39100E590CD /* AutoParkKgApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833095182948E39100E590CD /* AutoParkKgApp.swift */; };
-		8330951B2948E39100E590CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8330951A2948E39100E590CD /* ContentView.swift */; };
+		8330951B2948E39100E590CD /* CommonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8330951A2948E39100E590CD /* CommonView.swift */; };
 		8330951D2948E39300E590CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8330951C2948E39300E590CD /* Assets.xcassets */; };
 		833095202948E39300E590CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8330951F2948E39300E590CD /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		833095152948E39100E590CD /* AutoParkKg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutoParkKg.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		833095182948E39100E590CD /* AutoParkKgApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoParkKgApp.swift; sourceTree = "<group>"; };
-		8330951A2948E39100E590CD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8330951A2948E39100E590CD /* CommonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonView.swift; sourceTree = "<group>"; };
 		8330951C2948E39300E590CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8330951F2948E39300E590CD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,10 +51,10 @@
 		833095172948E39100E590CD /* AutoParkKg */ = {
 			isa = PBXGroup;
 			children = (
-				833095182948E39100E590CD /* AutoParkKgApp.swift */,
-				8330951A2948E39100E590CD /* ContentView.swift */,
-				8330951C2948E39300E590CD /* Assets.xcassets */,
-				8330951E2948E39300E590CD /* Preview Content */,
+				833095262948E95300E590CD /* App */,
+				833095282948E98200E590CD /* Model */,
+				833095272948E96100E590CD /* Resources */,
+				833095292948E98A00E590CD /* Workflow */,
 			);
 			path = AutoParkKg;
 			sourceTree = "<group>";
@@ -65,6 +65,78 @@
 				8330951F2948E39300E590CD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		833095262948E95300E590CD /* App */ = {
+			isa = PBXGroup;
+			children = (
+				833095182948E39100E590CD /* AutoParkKgApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		833095272948E96100E590CD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8330951C2948E39300E590CD /* Assets.xcassets */,
+				8330951E2948E39300E590CD /* Preview Content */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		833095282948E98200E590CD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		833095292948E98A00E590CD /* Workflow */ = {
+			isa = PBXGroup;
+			children = (
+				8330952E2948E9E700E590CD /* Common Workflow */,
+				8330952B2948E9C700E590CD /* Authorized Workflow */,
+				8330952A2948E9B800E590CD /* Unauthorized Workflow */,
+			);
+			path = Workflow;
+			sourceTree = "<group>";
+		};
+		8330952A2948E9B800E590CD /* Unauthorized Workflow */ = {
+			isa = PBXGroup;
+			children = (
+				8330952D2948E9E000E590CD /* Authorization Workflow */,
+				8330952C2948E9D700E590CD /* Registration Workflow */,
+			);
+			path = "Unauthorized Workflow";
+			sourceTree = "<group>";
+		};
+		8330952B2948E9C700E590CD /* Authorized Workflow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Authorized Workflow";
+			sourceTree = "<group>";
+		};
+		8330952C2948E9D700E590CD /* Registration Workflow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Registration Workflow";
+			sourceTree = "<group>";
+		};
+		8330952D2948E9E000E590CD /* Authorization Workflow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Authorization Workflow";
+			sourceTree = "<group>";
+		};
+		8330952E2948E9E700E590CD /* Common Workflow */ = {
+			isa = PBXGroup;
+			children = (
+				8330951A2948E39100E590CD /* CommonView.swift */,
+			);
+			path = "Common Workflow";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8330951B2948E39100E590CD /* ContentView.swift in Sources */,
+				8330951B2948E39100E590CD /* CommonView.swift in Sources */,
 				833095192948E39100E590CD /* AutoParkKgApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,7 +338,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AutoParkKg/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"AutoParkKg/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 57ZJPHWU8J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -295,7 +367,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"AutoParkKg/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"AutoParkKg/Resources/Preview Content\"";
 				DEVELOPMENT_TEAM = 57ZJPHWU8J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
