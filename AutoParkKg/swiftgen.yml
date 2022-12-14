@@ -1,0 +1,18 @@
+strings:
+    inputs: AutoParkKg/Resources/Localization/en.lproj
+    filter: .+\.strings$
+    outputs:
+        templatePath: AutoParkKg/Resources/Localization/strings-swift4.stencil
+        output: AutoParkKg/Resources/Localizable.swift
+
+fonts:
+    inputs: AutoParkKg/Resources/Fonts
+    outputs:
+        templateName: swift5
+        output: AutoParkKg/Resources/Fonts.swift
+
+xcassets:
+  inputs: AutoParkKg/Resources/Assets
+  outputs:
+    templateName: swift5
+    output: AutoParkKg/Resources/Assets.swift
